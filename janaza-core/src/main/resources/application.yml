@@ -1,0 +1,25 @@
+server:
+  port: 8092
+spring:
+  jpa:
+    open-in-view: false
+  main:
+    allow-circular-references: true
+  cloud:
+    gcp:
+      project-id: janaza-97c27
+      credentials:
+        location: classpath:google_credentials.json
+
+keycloak:
+  auth-server-url: https://kc.redcode.vip:8443
+  realm: janazaServer
+  resource: janaza_mobile_client
+  public-client: true
+  bearer-only: true
+
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        security: DEBUG
