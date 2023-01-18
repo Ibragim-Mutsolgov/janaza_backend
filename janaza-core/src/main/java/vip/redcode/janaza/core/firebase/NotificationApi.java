@@ -19,13 +19,13 @@ public class NotificationApi {
     public void sendNotification() throws FirebaseMessagingException, IOException {
         Notification notification = Notification.builder()
                 .setTitle("Канцыгов Ибрагим Зурабович")
-                .setBody("Умер")
+                .setBody("Умер6")
                 .build();
 
         Message message = Message.builder()
                 .setNotification(notification)
                 .putData("time", "now")
-                .setToken("dI4vUz5STMa_pfYQ6hpO9G:APA91bH6-KhqtzRQFCuZOFL_t0Qi7Zif3HCDtYGu0pMgG_hjfPYQZHhFHYwJ3gICapdZLmKaHH5fsSEQfEO-b8cp-N4001Hh8X8pYWmPK9n5b7PgWREzXjHHA6MnaFfiHUJBqOrXCIIq")
+                .setToken("cwVSOgjsQz6AVNTq1HrpPM:APA91bE_7jqowb0lh1kfhIsMAYApc9hzWk6iIVCh5xQQYfWyeg2q6ysnz8JL87sbSjPg4D2Iyir9FzVkV8KbKvfUWPTRLewQddCKxKV5EYM2ELlwGlGaruOaLsipZwP-WrjKSO2fyV5o")
                 .build();
 
         FileInputStream serviceAccount = new FileInputStream("janaza-core/src/main/resources/google_credentials.json");
